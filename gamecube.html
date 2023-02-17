@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="StyleSheet/indexstylesheet.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>GameCube</title>
+
+    </head>
+
+    <body onload="loadConsole()">
+ <!-- Creating grid to help with layout -->
+<div class="layout-grid">
+
+<!-- This div will be my visible page title-->
+<div class="title">
+    <h6>GameCube</h6>
+</div>
+
+<!-- This div will be my navigation bar -->
+<div class="navigation">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ds.html">DS</a></li> 
+            <li><a href="gamecube.html">GameCube</a></li>
+            <li><a href="switch.html">Switch</a></li>
+            <li><a href="saved.html">Saved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- This div will contain information about the console, I use a table to help with layout -->
+<div class="about">
+    <h5>Console</h5>
+        <table> 
+            <tr>
+                <td>
+                    <p class="table-paragraph" >
+                        The GameCube was released in 2001, it was Nintendos first console that used optical 
+                        discs instead of ROM cartridges. The GameCube competed with Sony's PlayStation 2 and
+                        Microsoft's Xbox. GameCube did come close third to Xbox. During this consoles lifespan 
+                        of 6 years, Nintendo released over 600 games!
+                        <br><br>
+						This console had so many great games that I could not narrow it down to just one 
+                        specific series, Mario Party were incredible multi-player games, Animal Crossing 
+                        was super fun if members of your household also played, since you shared a village, 
+                        Pikmin was a new and exciting strategy game with super cute characters.
+
+                    </p>
+                </td>
+          
+                <td>
+                    <img id="console-img" src="img/gamecube-pawel-durczok-a4jQAuh7C30-unsplash.jpg" alt="GameCube Console">
+                </td>
+            </tr>
+        </table>
+</div>
+
+<!-- This div will contain my top rated information, I use a table again to help with layout -->
+<div class="my-top-rated">
+    <h5>My Top Rated</h5>
+
+    <table id="my-top-rated-table">
+        <tr>
+            <td>
+                <img id="my-top-rated-img-gc" src="img/super-mario-sunshine.jpg" alt="'Super Mario Sunshine' Box Art">
+            </td>
+
+            <td>
+                <h3>Super Mario <br>Sunshine</h3>
+                <p id="my-top-rated-paragraph">
+                    This was my favourite game for the GameCube series, I always 
+                    liked the Mario games but this one amazed me right away! The 
+                    story is great and the gameplay even better, this game owes me 
+                    a lot of time, but gave me fond memories!
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- This div will contain the official top rated game for this console, I use a table to help with layout -->
+<div class="official-top-rated">
+    <h5>Official Top Rated</h5>
+
+    <table id="official-top-rated-table">
+        <tr>
+            <td>
+                <img id="top-rated-img-gc" src="img/super-smash-bros.jpg" alt="'Super Smash Bros: Melee' Box Art">
+            </td>
+
+            <td>
+                <h3>Super Smash Bros: Melee</h3>
+                <p id="official-top-rated-paragraph">
+                    This was a brilliant multi-player game, bringing all of
+                    your favourite characters into the battlefield, this was
+                    the best selling game with over 7 million copies sold. I 
+                    played this one a lot myself!
+                    <br>
+                    <a id="best-sellers" href="https://en.wikipedia.org/wiki/List_of_best-selling_GameCube_video_games">Check the best sellers here.</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- This div will contain my 'Reviews' section -->
+<div id="reviews">
+
+    <h5>Game Reviews</h5>
+
+    <div class="reviews-grid">
+        <div id="review-1">
+            <div id="luigis-mansion-review">
+                <h4>Luigis<br>Mansion</h4>
+                <img class="review-img" src="img/luigis-mansion.jpg" alt="'Luigis Mansion' Box Art">
+                <p class="review-text">
+                    Luigis Mansion was a launch title for GameCube,
+                    and is the second game where you play as Luigi 
+                    for the main character, not Mario. 
+                    This game was very eerie, and whilst frightening
+                    me, I thouroughly enjoyed how challenging it was!
+                    <br><br>
+                    You start in a Mansion with locked doors, and 
+                    defeat ghosts that pop up and scare you by stunning
+                    them with your flash light and using the Poltergust
+                    3000 to vaccum them, there were boss fights where 
+                    you would get keys to access other parts of the Mansion,
+                    to eventually try and find missing Mario.
+                </p>
+            </div>
+            <!-- This div will contain my buttons to enable to user to 'like' and 'save' reviews -->
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+
+        <div id="review-2">
+            <div id="paper-mario-review">
+                <h4>Paper Mario:<br>The Thousand Year Door</h4>
+                <img class="review-img" src="img/paper-mario-the-thousand-year-door.jpg" alt="'Paper Mario The Thousand Year Door' Box Art">
+                <p class="review-text">
+                    An amazing game from the Super Mario series, I 
+                    really loved playing this title, the art work and 
+                    gameplay was so different to the other Mario games,
+                    the Story was interesting, making it that much more
+                    enjoyable to play!
+                    <br><br> 
+                    The battle system was the same as the original
+                    Paper Mario, and I really wish they had kept 
+                    it for future titles, each move you could make 
+                    more powerful with extra action commands, you 
+                    could dodge incoming hits from enemies, reducing
+                    and sometimes completely negating damage.
+                </p>
+            </div>
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+
+        <div id="review-3">
+            <div id="tloz-twilight-princess-review">
+                <h4>The Legend of Zelda: <br>Twilight Princess</h4>
+                <img class="review-img" src="img/the-legend-of-zelda-twilight-princess.jpg" alt="'The Legend of Zelda: Twilight Princess' Box Art.">
+                <p class="review-text">
+                    Before the release of Breath of the Wild for 
+                    the Switch, this was my favourite game from The 
+                    Legend of Zelda series, there's a bunch of puzzles,
+                    lots of exploring with 9 large areas, and a new 
+                    guide mysterious guide 'Midna'. 
+                    <br><br>
+                    I particularly liked this game because you could 
+                    play as a wolf due to part of this games storyline,
+                    the 'darkness' of this game really drew me in, it 
+                    had a lot of bright and wonderful features also, I 
+                    liked fishing and seeing the village cat.
+                </p>
+            </div>
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+
+        <div id="review-4">
+            <div id="pokemon-colosseum-review">
+                <h4>Pokemon:<br>Colosseum</h4>
+                <img class="review-img" src="img/428px-Colosseum_EN_boxart.png" alt="'Pokemon: Colosseum' Box Art">
+                <p class="review-text">
+                    This Pokemon game had a totally different feel 
+                    to it than the previous main games, the 3D world 
+                    felt very exciting, you did not encounter wild 
+                    pokemon in this game, instead you would 'snag' 
+                    them from other trainers.
+                    <br><br> 
+                    There was a lot of double battles in this game 
+                    and with it having a different storyline
+                    to the previous games was really refreshing and 
+                    starting with both Umbreon and Espeon felt like 
+                    such a treat! This game made me warm to the new generation
+                    of Pokemon.
+                </p>
+            </div>
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- This form will enable the user to publish comments on the page. -->
+    <form id="comment-box" onsubmit="return false">
+        <label for="comment" id="comment-label">Leave a comment:</label>
+            <input type="text" name="comment" id="comment">
+            <button id="publish-comment">Publish Comment</button>
+            <div id="user-comment"></div>
+    </form>
+    
+</div>
+</div>
+    <script type="text/javascript" src="nintendo.js"></script>
+</body>
+</html>

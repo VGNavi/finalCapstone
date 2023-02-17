@@ -1,0 +1,715 @@
+/* This is the style sheet for my website */
+
+
+/* Using font-face to import fonts */
+@font-face {
+  font-family: AudioWide;
+  src: url(Fonts/Audiowide/Audiowide-Regular.ttf);
+}
+
+@font-face {
+  font-family: SourceCodePro;
+  src: url(Fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
+}
+
+/* STYLING FOR ELEMENTS ACROSS MULTIPLE PAGES */
+
+/* Styling for the contents of the <body> */
+body {
+  background-image: url(bgimg/sketchinthoughts-light.png);
+  font-family: SourceCodePro;
+  padding: 2vw;
+  /* This clamp() is useful to use rather than media queries, it works as clamp(min, preferred, max) */
+  width: clamp(200px, 50%, 600px);
+}
+
+/* Main layout settings */
+.layout-grid {
+  column-gap: 0.5vw;
+  display: grid;
+  grid-template-columns: repeat(20%);
+  grid-template-rows: repeat(20%);
+  margin-left: 3vw;
+  margin-right: 3vw;
+  row-gap: 0.5vw;
+}
+
+/* Header styling */
+h6 {
+  color: red;
+  font-family: AudioWide;
+  font-size: 2vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+}
+
+h5 {
+    font-family: AudioWide;
+    font-size: 1.5vw;
+    margin-bottom: -0.5vw;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+h4 {
+    font-family: AudioWide;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    text-align: center;
+  }  
+
+h3 {
+  font-family: AudioWide;
+  font-size: 1vw;
+  margin-bottom: -0.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: center;
+}
+
+  /* Changing the colour of the input boxes */
+input[type="text"] {
+  background-color: rgba(238, 250, 126, 0.8);
+  margin-bottom: 5px;
+  width: 100%;
+  border-color: rgba(219, 231, 109, 0.8);
+  border-style: double;
+}
+
+/**** INDEX - CONSOLE SECTION ****/
+.table-paragraph {
+  text-align: center;
+  font-size: 0.8vw;
+  margin-left: 2vw;
+  margin-right: 1vw;
+}
+
+td {
+  width: 30%;
+}
+
+#console-img {
+  width: 60%;
+  margin-top: 1.5vw;
+  position: relative;
+  left: 20%;
+}
+
+/**** AUTHOR SECTION ****/
+
+.author {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 35vw;
+    height: 18vw;
+    place-items: center;
+  }
+  
+  /* Styling the <p> element in the author area */
+  #form-text {
+    text-align: center;
+    font-size: 0.8vw;
+    margin-bottom: 5px;
+  }
+
+/**** TITLE STYLING BELOW ****/
+
+/* Styling for the title div */
+.title {
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-row-start: 1;
+    height: 4.5vw;
+    width: 100%;
+}
+
+
+/**** MULTI PAGES - TOP RATED SECTION ****/
+
+/* The styling below is for the images in these sections */
+#my-top-rated-img-ds {
+  margin-left: 2.5vw;
+  margin-top: 1vw;
+  width: 70%;
+}
+
+#top-rated-img-ds {
+  margin-left: 2.5vw;
+  margin-top: 1vw;
+  width: 70%;
+}
+
+#my-top-rated-img-gc {
+  margin-left: 4vw;
+  margin-top: 1vw;
+  width: 50%;
+}
+
+#top-rated-img-gc {
+  margin-left: 4vw;
+  margin-top: 1vw;
+  width: 50%;
+}
+
+#top-rated-img-sw {
+  margin-left: 4vw;
+  margin-top: 1vw;
+  width: 45%;
+}
+
+#my-top-rated-img-sw {
+  margin-left: 4vw;
+  margin-top: 1vw;
+  width: 45%;
+}
+
+/* This styling is for the paragraph in My Top Rated section */
+#my-top-rated-paragraph {
+  background-color: rgba(238, 250, 126, 0.8);
+  display: block;
+  font-size: 0.8vw;
+  margin-left: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 1vw;
+  text-align: center;
+}
+
+/* Styling for the table in the 'My Top Rated' sections. */
+#my-top-rated-table {
+  margin-right: 5%;
+}
+
+
+/**** OFFICIAL TOP RATED SECTION ****/
+
+/* This styling is for the paragraph in Official Top Rated section */
+#official-top-rated-paragraph {
+  display: block;
+  background-color: rgba(238, 250, 126, 0.8);
+  text-align: center;
+  font-size: 0.8vw;
+  margin-left: 1vw;
+  margin-right: 0.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+/* Styling for the best sellers external link */
+#best-sellers {
+  font-size: 0.8vw;
+  color: red;
+}
+
+/* Styling for the table in the 'Official Top Rated' sections. */
+#official-top-rated-table {
+  margin-right: 5%;
+}
+
+
+/**** NAVIGATION STYLING ****/
+
+/* This styles the nav element */
+.navigation {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  font-family: AudioWide;
+  grid-column-end: 1;
+  grid-column-start: 1;
+  grid-row-end: 8;
+  grid-row-start: 2;
+  place-items: center;
+}
+
+/* Styling the navigation hyperlink 'buttons' */
+a {
+    margin-bottom: 1vw;
+}
+
+/* Keeping the text black when the page has been visited */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* Keeping link text black and removing default decoration */
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* Making link text change colour when being hovered over */
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* Making link text change colour when being clicked on */
+a:active {
+  color: yellow;
+}
+
+/* Styling for unordered list elements */
+ul {
+  list-style: none;
+  padding: 0vw;
+  margin: 5vw;
+}
+
+/* Styling for links within list elements */
+li a {
+  display: block;
+  padding: 5px;
+}
+
+/* Styling list elements*/
+li {
+  text-align: center;
+  font-size: 1.3vw;
+  margin-top: 1vw;
+}
+
+/* Styling just the first child element in the list */
+li:first-child {
+  background-color: rgba(238, 250, 126, 0.8);
+}
+
+/**** INDEX PAGE STYLING BELOW ****/
+
+/* Styling the about div */
+.about {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  grid-column-end: 4;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-row-start: 2;
+  height: 19vw;
+  place-items: center;
+  width: 71vw;
+}
+
+/* Styling the image in the 'About' section. */
+#about-img {
+  left: 20%;
+  margin-top: 0vw;
+  position: relative;
+  width: 65%;
+}
+
+/* Styling the image in the 'Author' section. */
+#me-img {
+  border-radius: 5vw;
+  left: 3%;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  position: relative;
+  width: 75%;
+}
+
+/* Styling for the paragraphs. */
+.index-paragraph {
+  font-size: 0.8vw;
+  margin-right: 1vw;
+  text-align: center;
+}
+
+/* Styling for the header element*/
+#index-header {
+  font-size: 1.2vw;
+}
+
+
+/**** COMING SOON SECTION STYLING BELOW ****/
+
+/* Styling the coming soon div */
+.coming-soon {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  grid-column-end: 3;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-row-start: 3;
+  height: 18vw;
+  place-items: center;
+  text-align: center;
+  width: 35vw;
+}
+
+/* Styling for the image in the 'Coming Soon' section. */
+#coming-soon-img {
+  margin-left: 6vw;
+  margin-top: 2vw;
+  padding-right: 5vw;
+  width: 40%;
+}
+
+/* Styling for the external link to the trailer of the game in the 'Coming Soon' section.*/
+#trailer-link {
+  color: red;
+  font-size: 0.8vw;
+  margin-left: 1.5vw;
+}
+
+
+/**** MY TOP RATED ****/
+
+/* General styling for the section. */
+.my-top-rated {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  grid-column-end: 3;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-row-start: 3;
+  height: 18vw;
+  place-items: center;
+  width: 35vw;
+}
+
+/* Styling the paragraph */
+#my-top-rated-paragraph {
+  width: 85%;
+}
+
+/**** OFFICIAL TOP RATED ****/
+
+/* General styling for the section. */
+.official-top-rated {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-row-start: 3;
+  height: 18vw;
+  place-items: center;
+  width: 35vw;
+}
+
+/***** REVIEWS *****/
+
+/* General styling for the section. */
+#reviews {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  grid-column-end: 4;
+  grid-column-start: 2;
+  grid-row-end: 8;
+  grid-row-start: 4;
+  place-items: center;
+}
+
+/* Grid layout settings for the section. */
+.reviews-grid {
+  column-gap: 0.5vw;
+  display: grid;
+  grid-template-columns: repeat(20%);
+  grid-template-rows: repeat(20%);
+  margin-left: 3vw;
+  margin-right: 3vw;
+  row-gap: 0.5vw;
+}
+
+/* Styling for all images in the section. */
+.review-img {
+  margin-top: 1vw;
+  width: 40%;
+}
+
+/* Styling for all text in the section. */
+.review-text {
+  background-color: rgba(238, 250, 126, 0.8);
+  font-size: 0.8vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Styling for all buttons in this section. */
+.buttons {
+  margin-top: 1vw;
+  text-align: center;
+}
+
+/* Positioning and stlying for the 'like' buttons in this section. */
+.like {
+  background-color: rgba(252, 255, 240, 0);
+  border-color: red;
+  color: red;
+  font-family: SourceCodePro;
+  font-size: 0.8vw;
+  grid-column-end: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-row-start: 1;
+  left: -10%;
+  position: relative;
+  width: 5vw;
+}
+
+/* Positioning and stlying for the 'save' buttons in this section. */
+.save {
+  background-color: rgba(252, 255, 240, 0);
+  border-color: red;
+  color: red;
+  font-family: SourceCodePro;
+  font-size: 0.8vw;
+  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  grid-row-start: 1;
+  left: 10%;
+  position: relative;
+  width: 5vw;
+}
+
+/* Styling the comment boxes. */
+#comment-box {
+  font-family: SourceCodePro;
+  font-size: 0.8vw;
+  left: 30%;
+  margin-bottom: 0.5vw;
+  margin-top: 1vw;
+  position: relative;
+  text-align: center;
+  width: 40%;
+}
+
+/* Styling the comments labels. */
+.comment-label {
+  font-family: SourceCodePro;
+  font-size: 0.8vw;
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-row-start: 2;
+  left: 35%;
+  margin-bottom: 0.5vw;
+  margin-top: 1vw;
+  position: relative;
+}
+
+/* Styling the comments that will be published. */
+.comment {
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-row-start: 3;
+  left: 35%;
+  padding-bottom: 1vw;
+  position: relative;
+}
+
+/* Styling the comment 'publish' button. */
+#publish-comment {
+  background-color: rgba(252, 255, 240, 0);
+  border-color: red;
+  color: red;
+  font-family: SourceCodePro;
+  font-size: 0.8vw;
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-row-start: 4;
+  position: relative;
+  width: 40%;
+}
+
+#user-comment {
+    font-size: 0.8vw;
+    margin-top: 1vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    text-align: center;
+}
+
+.comment-boxes {
+    background-color: rgba(238, 250, 126, 0.8);
+    left: 25%;
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+
+/* Positioning all the 'reviews' in the grid. */
+#review-1 {
+  grid-column-end: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-row-start: 1;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: center;
+}
+
+#review-2 {
+  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  grid-row-start: 1;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: center;
+}
+
+#review-3 {
+  grid-column-end: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-row-start: 2;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: center;
+}
+
+#review-4 {
+  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-row-start: 2;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  text-align: center;
+}
+
+/**** SAVED - STYLING ****/
+
+#saved-reviews {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  grid-column-end: 4;
+  grid-column-start: 2;
+  grid-row-end: 8;
+  grid-row-start: 2;
+  place-items: center;
+  width: 71vw;
+}
+
+/**** CONTACT - STYLING ****/
+#contact-div {
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-row-end: 8;
+    grid-row-start: 2;
+    place-items: center;
+    width: 71vw;
+  }
+
+#contact {
+    display: grid;
+    grid-template-columns: repeat(20%);
+    grid-template-rows: repeat(20%);
+}
+
+input {
+    font-family: SourceCodePro;
+}
+
+form {
+    margin-top: 3vw;
+    margin-left: 2vw;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 0.2vw;
+}
+
+#first-name {
+    grid-column-end: 1;
+    grid-column-start: 1;
+    margin-bottom: 1vw;
+    width: 20%;
+}
+
+#last-name {
+    grid-column-end: 1;
+    grid-column-start: 1;
+    margin-bottom: 1vw;
+    width: 20%;
+}
+
+
+#email {
+    grid-column-end: 1;
+    grid-column-start: 1;
+    margin-bottom: 1vw;
+    width: 20%;
+}
+
+#message {
+    grid-column-end: 1;
+    grid-column-start: 1;
+    margin-bottom: 1vw;
+    padding-bottom: 5vw;
+    width: 50%;
+}
+
+#contact-submit {
+    background-color: rgba(252, 255, 240, 0);
+    border-color: red;
+    color: red;
+    font-family: SourceCodePro;
+    font-size: 0.8vw;
+    grid-column-end: 1;
+    grid-column-start: 1;
+    width: 10%;
+}
+
+
+ 

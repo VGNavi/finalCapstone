@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="StyleSheet/indexstylesheet.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>DS</title>
+
+    </head>
+
+    <body onload="loadConsole()">
+ <!-- Creating grid to help with layout -->
+<div class="layout-grid">
+
+<!-- This div will be my visible page title-->
+<div class="title">
+    <h6>DS</h6>
+</div>
+
+<!-- This div will be my navigation bar -->
+<div class="navigation">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ds.html">DS</a></li> 
+            <li><a href="gamecube.html">GameCube</a></li>
+            <li><a href="switch.html">Switch</a></li>
+            <li><a href="saved.html">Saved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- This div will contain information about the console, I use a table to help with layout -->
+<div class="about">
+    <h5>Console</h5>
+        <table> 
+            <tr>
+                <td>
+                    <p class="table-paragraph" >
+                        The DS was a dual screen portable console with touch screen technology, there
+                        were a few in this series, the first was released 2004, the lite was released
+                        2006, which as the name suggests, was a lighter version of the bulky DS.
+                        The DSi followed in 2008 featuring a camera, and an XL version for those who 
+                        preferred a larger screen.
+                        Finally the 3DS was released in 2011, with an XL version in 2015.
+                        <br><br>
+                        The first DS I had was the original DS console, it was a white version with 
+                        the classic release of Nintendogs, a game where you had your own virtual pet 
+                        dog, and using the styus, you could interact with it. 
+                        The built in microphone enabled you to whistle to get your dogs attention, 
+                        it was great fun for its time.
+                    </p>
+                </td>
+          
+                <td>
+                    <img id="console-img" src="img/ds-denise-jans-vPAeOZkpBJQ-unsplash.jpg" alt="DS Console">
+                </td>
+            </tr>
+        </table>
+</div>
+
+<!-- This div will contain my top rated information, I use a table again to help with layout -->
+<div class="my-top-rated">
+    <h5>My Top Rated</h5>
+
+    <table id="my-top-rated-table">
+        <tr>
+            <td>
+                <img id="my-top-rated-img-ds" src="img/pokemon-mystery-dungeon.png" alt="Pokemon Mystery Dungeon box art">
+            </td>
+
+            <td>
+                <h3>Pokemon Mystery Dungeon</h3>
+                <p id="my-top-rated-paragraph">
+                    This was my absolute favourite game for the DS series,
+                    it was such a different experience to the Pokemon games 
+                    I already knew and loved, it did not lack a challenge
+                    either, bringing hours and hours of fun!
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- This div will contain the official top rated game for this console, I use a table to help with layout -->
+<div class="official-top-rated">
+    <h5>Official Top Rated</h5>
+
+    <table id="official-top-rated-table">
+        <tr>
+            <td>
+                <img id="top-rated-img-ds" src="img/new-super-mario-bros.jpg" alt="New Super Mario Bros box art">
+            </td>
+
+            <td>
+                <h3>New Super Mario Bros</h3>
+                <p id="official-top-rated-paragraph">
+                    This was a revamp of the original Super Mario Brothers
+                    game, with updated graphics and bringing users that feeling
+                    of nostalgia. It became so popular that it sold over 30 million
+                    copies worldwide.
+                    <br>
+                    <a id="best-sellers" href="https://en.wikipedia.org/wiki/List_of_best-selling_Nintendo_DS_video_games">Check the best sellers here.</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- This div will contain my 'Reviews' section -->
+<div id="reviews">
+
+    <h5>Game Reviews</h5>
+
+    <div class="reviews-grid">
+        <div id="review-1">
+            <div id="ac-wildworld-review">
+                <h4>Animal Crossing:<br>Wild World</h4>
+                <img class="review-img" src="img/Animal_Crossing_Wild_World_cover.png" alt="'Animal Crossing: Wild World' Box Art">
+                <p class="review-text">
+                    This is a relaxing game where you play as a 
+                    character living in a town with animal characters
+                    for neighbours, the Animal Crossing games are synced
+                    to the systems clock, so what day and time you play
+                    really changes the experience.
+                    <br><br>
+                    My love for animal crossing started with the
+                    original GameCube version, but a portable console   
+                    with wireless capabilities really made this game 
+                    more enjoyable, the touch screen was super fun, 
+                    making selection more accurate, and sorting storage
+                    that little bit easier than a regular game. 
+                </p>
+            </div>
+            <!-- This div will contain my buttons to enable to user to 'like' and 'save' reviews -->
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+
+        <div id="review-2">
+            <div id="harvest-moon-review">
+                <h4>Harvest Moon:<br>DS</h4>
+                <img class="review-img" src="img/Harvest_Moon_DS_Coverart.png" alt="'Harvest Moon: DS' Box Art">
+                <p class="review-text">
+                    Harvest Moon is considered to be another relaxing
+                    game, it is from the Story of Seasons series before
+                    they rebranded and another company held the 'Harvest
+                    Moon' name and made similar games.
+                    it is a farm simlation & role playing game, you
+                    can farm crops and raise livestock, you can upgrade
+                    your home and build friendships.
+                    <br><br>
+                    I really enjoyed this game in particular from this 
+                    series, as you could have your horse hold your crops
+                    before you store or ship them to sell, which made 
+                    harvesting a lot less tedious, running back and forth
+                    to empty your characters backpack storage.
+                </p>
+            </div>
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+
+        <div id="review-3">
+            <div id="tloz-phantom-hourglass-review">
+                <h4>The Legend of Zelda: Phantom Hourglass</h4>
+                <img class="review-img" src="img/The_Legend_of_Zelda_Phantom_Hourglass_Game_Cover.jpg" alt="'The Legend of Zelda: Phantom Hourglass' Box Art.">
+                <p class="review-text">
+                    This is a super enjoyable game from The Legend
+                    of Zelda series, where you can explore islands
+                    by sailing between them, and explore the dungeons 
+                    on foot. On the top screen of the console you can 
+                    view a map, you can also make notes on the map 
+                    by bringing it down to the bottom screen and 
+                    drawing on it.
+                    <br><br>
+                    This game featured a large dungeon in which 
+                    Link needs to obtain sea charts to allow him 
+                    to sail other parts of the ocean, these dungeons 
+                    have phantoms, an enemy in which you use stealth 
+                    to get past, rather than engage in combat.
+                </p>
+            </div>
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+
+        <div id="review-4">
+            <div id="pokemon-platinum-review">
+                <h4>Pokemon:<br>Platinum</h4>
+                <img class="review-img" src="img/pokemon-platinum-668px-Platinum_EN_boxart.png" alt="'Pokemon: Platinum' Box Art">
+                <p class="review-text">
+                    A great game from the Pokemon series. This game
+                    is located in the 'Sinnoh' region, the same as 
+                    Diamond & Pearl, but the wireless features had 
+                    been enhanced.
+                    <br><br>
+                    Every Gen IV Pokemon (apart from legendaries)
+                    were included in Platinum, meaning there were
+                    no version exclusives, so you could enjoy all
+                    of the new mons. I was a little underwhelmed 
+                    with the fire type starter Pokemon 'Chimchar'
+                    and opted in for Piplup, Empoleon makes for a
+                    very well designed Pokemon! I think I enjoyed 
+                    the Pokemon Super Contests more than anything 
+                    in this generation.
+                </p>
+            </div>
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- This form will enable the user to publish comments on the page. -->
+    <form id="comment-box" onsubmit="return false">
+        <label for="comment" id="comment-label">Leave a comment:</label>
+            <input type="text" name="comment" id="comment">
+            <button id="publish-comment">Publish Comment</button>
+            <div id="user-comment"></div>
+    </form>
+    
+</div>
+</div>
+    <script type="text/javascript" src="nintendo.js"></script>
+</body>
+</html>

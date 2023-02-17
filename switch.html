@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="StyleSheet/indexstylesheet.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Switch</title>
+
+    </head>
+
+    <body onload="loadConsole()">
+ <!-- Creating grid to help with layout -->
+<div class="layout-grid">
+
+<!-- This div will be my visible page title-->
+<div class="title">
+    <h6>Switch</h6>
+</div>
+
+<!-- This div will be my navigation bar -->
+<div class="navigation">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ds.html">DS</a></li> 
+            <li><a href="gamecube.html">GameCube</a></li>
+            <li><a href="switch.html">Switch</a></li>
+            <li><a href="saved.html">Saved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- This div will contain information about the console, I use a table to help with layout -->
+<div class="about">
+    <h5>Console</h5>
+        <table> 
+            <tr>
+                <td>
+                    <p class="table-paragraph" >
+                        The Switch is Nintendos current console, it was released in 2017 with the lite 
+						version released in 2019. It is a portable handheld console that also comes with 
+						a dock which enabled you to attatch it to the tv and play there also, it has 
+						removeable controllers (joy-cons) which you can get in many different colours for 
+						customisation.
+                        <br><br>
+						This console has an excellent collection of games, with quite a few remasters and 
+						ports, the online membership allows you to play some classics from the NES, SNES, 
+						N64 and even the Sega Genesis. My most played gaame was Animal Crossing: New Horizons,
+						which took the world by storm during the Covid 19 lockdown, enabling people to interact 
+						in the gaming world.
+                    </p>
+                </td>
+          
+                <td>
+                    <img id="console-img" src="img/switch-jesper-brouwers--nQrR76hryg-unsplash.jpg" alt="Switch Console">
+                </td>
+            </tr>
+        </table>
+</div>
+
+<!-- This div will contain my top rated information, I use a table again to help with layout -->
+<div class="my-top-rated">
+    <h5>My Top Rated</h5>
+
+    <table id="my-top-rated-table">
+        <tr>
+            <td>
+                <img id="my-top-rated-img-sw" src="img/zelda-breath-of-the-wild.jpg" alt="'The Legend of Zelda: Breath of the Wild' Box Art">
+            </td>
+
+            <td>
+                <h3>The Legend of Zelda: Breath of the Wild</h3>
+                <p id="my-top-rated-paragraph">
+                    This game has held the top spot for me since the start, it 
+					was the first game I played and nothing is yet to live up to 
+					the experience I had playing this. The art is beautiful and 
+					the game play challenging. 
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- This div will contain the official top rated game for this console, I use a table to help with layout -->
+<div class="official-top-rated">
+    <h5>Official Top Rated</h5>
+
+    <table id="official-top-rated-table">
+        <tr>
+            <td>
+                <img id="top-rated-img-sw" src="img/mario-kart-8-deluxe.jpg" alt="'Mario Kart 8: Deluxe' Box Art">
+            </td>
+
+            <td>
+                <h3>Mario Kart 8: 
+					<br>Deluxe</h3>
+                <p id="official-top-rated-paragraph">
+                    This game sold over 48 million copies worldwide, and 
+					is one of the best selling games of all time.
+					There is plenty of fun to be had with this classic
+					racing game by Nintendo.
+
+                    <br>
+                    <a id="best-sellers" href="https://en.wikipedia.org/wiki/List_of_best-selling_Nintendo_Switch_video_games">Check the best sellers here.</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- This div will contain my 'Reviews' section -->
+<div id="reviews">
+
+    <h5>Game Reviews</h5>
+
+    <div class="reviews-grid">
+        <div id="review-1">
+            <div id="pokemon-legends-arceus-review">
+                <h4>Pokemon Legends:<br>Arceus</h4>
+                <img class="review-img" src="img/pokemon-arceus.jpeg" alt="'Pokemon Legends: Arceus' Box Art">
+                <p class="review-text">
+					After hearing about this game pre-release, I had
+					high hopes, and I was not dissapointed! this was a 
+					fantastic addition to the Pokemon series, a whole
+					new way of capturing pokemon, and I felt it gave me
+					a real drive to finish the PokeDex this time.
+					<br><br>
+					I was most looking forward to exploring the open-world 
+					and I loved every second, unlocking different ways to 
+					get around after each 'boss' battle kept me engaged with
+					the storyline, being able to see shiny pokemon made it 
+					super fun to shiny hunt! I can only hope this won't be 
+					the only 'Legends' game.
+				</p>
+            </div>
+            <!-- This div will contain my buttons to enable to user to 'like' and 'save' reviews -->
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+
+        <div id="review-2">
+            <div id="animal-crossing-nh-review">
+                <h4>Animal Crossing:<br>New Horizons</h4>
+                <img class="review-img" src="img/animal-crossing-new-horizons.jpg" alt="'Animal Crossing: New Horizons' Box Art">
+                <p class="review-text">
+					As far as relaxing games go, this wins, it is so
+					laid back and allows you to go at your own pace
+					completely, theres plenty to do when you first 
+					begin, and so much stuff to collect to decorate 
+					your home and your whole island with.
+					<br><br>
+					When I heard the news of this games release, I 
+					was over the moon, with todays consoles capabilities
+					for online play, I was thinking of all the 
+					possibilities, I wanted everyone I knew to play 
+					this with me! To see that you could decorate your 
+					whole island, not just your house, and on top of that
+					completely shape the land, made me so excited to get 
+					stuck in! 
+				</p>
+            </div>
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+
+        <div id="review-3">
+            <div id="minecraft-dungeons-review">
+                <h4>Minecraft <br>Dungeons</h4>
+                <img class="review-img" src="img/minecraft-dungeons.jpg" alt="'Minecraft Dungeons' Box Art.">
+                <p class="review-text">
+					This game, as the title suggest, is a dungeon 
+					crawler, with hack and slash combat. You go 
+					into the dungeons, filled with all types of 
+					mobs and get past traps and puzzles, then a 
+					final boss to get out alive with your loot.
+					<br><br>
+					As you progress you unlock new areas and 
+					difficulties, there is tons of DLC content 
+					for very good prices, and this is super fun 
+					to play with friends, I never thought I would 
+					enjoy this game when my partner suggested I 
+					play with him, but I quickly got into it!
+				</p>
+            </div>
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+
+        <div id="review-4">
+            <div id="pokemon-sv-review">
+                <h4>Pokemon:<br>Scarlet & Violet</h4>
+                <img class="review-img" src="img/pokemon-violet.png" alt="'Pokemon: Violet' Box Art">
+                <p class="review-text">
+					I was looking forward to this game for some time 
+					after 'Pokemon Legends: Arceus' was released, 
+					knowing they were keeping the open-world but 
+					keeping everything else from the main game series.
+					<br><br> 
+					I did have a big problem with the quality of this 
+					game in regards to the fps, it just felt very poor 
+					and unfinished coming from such a huge name. But I 
+					have to admit, regardless of the issues, I really 
+					enjoyed this game and the story, there was a lot of
+					content and so much exploring to do. I hope the next 
+					game is way more polished when it is released.
+				</p>
+            </div>
+            <div class="buttons-grid">
+                <button class="like">Like</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- This form will enable the user to publish comments on the page. -->
+    <form id="comment-box" onsubmit="return false">
+        <label for="comment" id="comment-label">Leave a comment:</label>
+            <input type="text" name="comment" id="comment">
+            <button id="publish-comment">Publish Comment</button>
+            <div id="user-comment"></div>
+    </form>
+    
+</div>
+</div>
+    <script type="text/javascript" src="nintendo.js"></script>
+</body>
+</html>

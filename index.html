@@ -1,0 +1,120 @@
+<!-- Setting up DOCTYPE -->
+<!DOCTYPE html>
+
+<!-- Setting Language -->
+<html lang="en">
+
+    <!-- Creating head with necassary title, character encoding, style sheet links and viewport-->
+    <head> 
+        <link rel="stylesheet" href="StyleSheet/indexstylesheet.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Nintendo and Me</title>
+
+    </head>
+
+    <!-- Creating body of web page -->
+    <body onload="loadIndex()">
+
+        <!-- Creating grid to help with layout -->
+        <div class="layout-grid">
+
+            <!-- This div will be my visible page title-->
+            <div class="title">
+                <h6>Nintendo & Me</h6>
+            </div>
+
+            <!-- This div will be my navigation bar -->
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ds.html">DS</a></li> 
+                        <li><a href="gamecube.html">GameCube</a></li>
+                        <li><a href="switch.html">Switch</a></li>
+                        <li><a href="saved.html">Saved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- This div will contain my about information for the website -->
+            <div class="about">
+
+                <h5>About</h5>
+
+                <table> 
+                    <tr>
+                        <td>
+                            <p class="table-paragraph" >
+                                Nintendo was very much a large part of my childhood, I loved to play games with my brothers and sisters, my first favourite was Super Mario World and then later
+                                when the Game Boy was released, Pokemon became an instant favourite, so expect to see plenty of pokemon titles pop up on these pages!
+                                <br><br>
+                                You may notice that not all the consoles are shown in the navigation bar, these will be updated soon!
+                                <br><br>
+                                On each page you will find information about each console, my favourite games on that particular console and my personal rankings, if you have suggestions on
+                                any games that I did not mention, that you think I should play some time, or you have any queries about games that I have mentioned, feel free to contact me!
+                            </p>
+                        </td>
+                  
+                        <td>
+                            <img id="about-img" src="img/pokemonyellow-mika-baumeister-7P2QXuPmR9I-unsplash.jpg" alt="Pokemon Yellow Cartridge">
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <!-- This div will contain coming soon infomration -->
+            <div class="coming-soon">
+
+                <h5>Coming Soon</h5>
+
+                <table id="coming-soon-table">
+                    <tr>
+                        <td>
+                            <img id="coming-soon-img" src="img/totk-box-art.png" alt="Tears of The Kingdom Box Art">
+                            <a id="trailer-link" href = "https://www.youtube.com/watch?v=2SNF4M_v7wc">-Trailer Here-</a>
+                        </td>
+
+                        <td>
+                            <h4 id="index-header">The Lengend of Zelda: Tears of the Kingdom</h4>
+                            <p class="index-paragraph">
+                                The sequel to Breath of the Wild is being released 12th May 
+                                2023 after a long wait, this release will feature a deluxe 
+                                edition which includes a steelbook, art book, pin set and 
+                                metal poster along with the game itself.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            
+            <div class="author">
+
+                <h5>Author</h5>
+
+                <table id="author-table">
+                    <tr>
+                        <td>
+                            <img id="me-img" src="img/me-img.jpg" alt="Photo of Author: Laura">
+                        </td>
+
+                        <td>
+                            <h4 id="index-header">Laura</h4>
+                            <p class="index-paragraph">
+                                I am a 27 year old Web Developer from Cheshire with a love
+                                for Nintendo, I grew up playing Nintendo games, 
+                                my favourites are The Legend of Zelda & the Pokemon series, 
+                                though I have so much love for many other titles!
+                            </p>
+                        </td>   
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script type="text/javascript" src="nintendo.js"></script>
+    </body>
+</html>

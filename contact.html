@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head> 
+        <link rel="stylesheet" href="StyleSheet/indexstylesheet.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Contact</title>
+
+    </head>
+
+    <body onload="loadContact()">
+         <!-- Creating grid to help with layout -->
+         <div class="layout-grid">
+
+            <!-- This div will be my visible page title-->
+            <div class="title">
+                <h6>Contact</h6>
+            </div>
+
+            <!-- This div will be my navigation bar -->
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ds.html">DS</a></li> 
+                        <li><a href="gamecube.html">GameCube</a></li>
+                        <li><a href="switch.html">Switch</a></li>
+                        <li><a href="saved.html">Saved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="contact-div">
+                <h5>Contact Me</h5>
+                <form id="contact">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Your first name..">
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="Your message..">
+
+                    <button id="contact-submit">Submit</button>
+                </form>
+            </div>
+
+        <script type="text/javascript" src="nintendo.js"></script>
+    </body>
+
+</html>
